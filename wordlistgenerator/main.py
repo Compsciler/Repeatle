@@ -4,7 +4,7 @@ from jsonfilelist import json_file_to_list, list_to_json_file
 
 random.seed(0)
 
-old_word_list_json_file = 'constants/oldwordlist.json'
+old_word_list_json_file = 'constants/nytwordlist.json'
 new_word_list_file = 'constants/wordlist.json'
 
 old_valid_guesses_json_file = 'constants/oldvalidGuesses.json'
@@ -14,10 +14,10 @@ def get_word_list(old_word_list):
     new_word_list = []
     for old_word in old_word_list:
         old_word_letter_freq = Counter(old_word)
-        for (c, freq) in old_word_letter_freq.items():
+        for c, freq in old_word_letter_freq.items():
             if freq >= 2:
                 new_word_list.append(old_word)
-                continue
+                break
     return new_word_list
 
 old_word_list = json_file_to_list(old_word_list_json_file)
