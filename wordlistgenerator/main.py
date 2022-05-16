@@ -2,7 +2,7 @@ import random
 from collections import Counter
 from jsonfilelist import json_file_to_list, list_to_json_file
 
-random.seed(0)
+random.seed(1)
 
 old_word_list_json_file = 'constants/nytwordlist.json'
 new_word_list_file = 'constants/wordlist.json'
