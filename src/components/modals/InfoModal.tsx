@@ -66,7 +66,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         This is an open source version of the word guessing game we all know and
         love -{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/Compsciler/Repeatle"
           className="underline font-bold"
         >
           check out the code here
